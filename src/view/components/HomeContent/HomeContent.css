@@ -1,12 +1,12 @@
 .home-content {
   padding: 24px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  min-height: calc(100vh - 80px);
+  background-image: url('/src/assets/banner.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0009;
+  background-blend-mode: soft-light;
+  min-height: 100vh;
 }
 
 .home-content__title {
@@ -21,6 +21,7 @@
   color: #FFF;
   font-weight: 600;
   position: relative;
+  font-size: 25px;
   background: transparent;
   padding: 10px 15px;
   border-radius: 5px;
@@ -37,7 +38,7 @@
   height: 100%;
   background-color: var(--alt-color);
   border-radius: 5px;
-  z-index: -1;
+  z-index: 1;
   transition: width 0.5s;
 }
 
@@ -45,6 +46,12 @@
   &::after {
     width: 100%;
   }
+}
+
+.home-content__button span {
+  position: relative;
+  z-index: 2;
+
 }
 
 @media (width <=720px) {

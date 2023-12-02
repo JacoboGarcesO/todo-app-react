@@ -1,8 +1,8 @@
 import './Container.css'
 
-export const Container = ({ children }) => {
+export const Container = ({ children, styles }) => {
   return (
-    <section className='container'>
+    <section className='container' style={styles}>
       {children}
     </section>
   )
