@@ -51,11 +51,18 @@
 .home-content__button span {
   position: relative;
   z-index: 2;
-
 }
 
 @media (width <=720px) {
   .home-content__title {
     font-size: 35px;
+  }
+
+  .home-content__button span {
+    z-index: 1;
+  }
+
+  .home-content__button::after {
+    background-color: transparent;
   }
 }

@@ -86,7 +86,7 @@
     display: grid;
     place-content: center;
     width: 85%;
-    z-index: 99;
+    z-index: 3;
     backdrop-filter: blur(20px);
     background-color: #0000009b;
     transition: right .3s ease-out;
