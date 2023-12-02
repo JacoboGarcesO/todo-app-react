@@ -1,5 +1,9 @@
+import { HomeContent } from '../components/HomeContent/HomeContent'
+
 export const Home = () => {
   return (
-    <h1>Hola Home</h1>
+    <>
+      <HomeContent />
+    </>
   )
 }

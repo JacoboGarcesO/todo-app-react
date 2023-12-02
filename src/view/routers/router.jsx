@@ -1,5 +1,5 @@
 import { createHashRouter } from 'react-router-dom'
-import { Layout } from '../components/Layout'
+import { Layout } from '../components/Layout/Layout'
 import { Authentication } from '../pages/Authentication'
 import { Dashboard } from '../pages/Dashboard'
 import { Home } from '../pages/Home'
