@@ -1,5 +1,5 @@
+import { AuthForm } from '../components/AuthForm/AuthForm'
+
 export const Authentication = () => {
-  return (
-    <h1>Hola Authentication</h1>
-  )
+  return <AuthForm />
 }

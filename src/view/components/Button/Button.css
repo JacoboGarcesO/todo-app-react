@@ -1,0 +1,29 @@
+.button {
+  position: relative;
+  background: transparent;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--alt-color);
+  border-radius: 5px;
+  z-index: -1;
+  transition: width 0.5s;
+}
+
+.button:hover {
+  &::after {
+    width: 100%;
+  }
+}
