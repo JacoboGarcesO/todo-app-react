@@ -11,6 +11,7 @@
 
 .auth-form__return {
   display: inline;
+  color: #FFF;
 }
 
 .auth-form__content {
@@ -84,7 +85,7 @@
   .auth-form__content--is-login {
     right: -20px;
     top: -35px;
-    height: 350px;
+    height: 375px;
     gap: 20px;
 
   }
