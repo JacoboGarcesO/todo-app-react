@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.auth-form__return {
+  display: inline;
+}
+
 .auth-form__content {
   position: absolute;
   width: 50%;
@@ -74,12 +78,14 @@
     top: 325px;
     padding: 24px;
     height: 450px;
-    transition: top 0.3s ease-in, height 0.3s ease-in;
+    transition: top 0.3s ease-in, height 0.3s ease-in, gap 0.3s ease-in;
   }
 
   .auth-form__content--is-login {
     right: -20px;
     top: -35px;
     height: 350px;
+    gap: 20px;
+
   }
 }

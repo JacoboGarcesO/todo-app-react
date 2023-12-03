@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { LoginForm } from '../LoginForm/LoginForm'
 import { SignUpForm } from '../SignUpForm/SignUpForm'
 import './AuthForm.css'
+import { ArrowLeftIcon } from '../Icons/ArrowLeftIcon'
+import { Link } from 'react-router-dom'
 
 export const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true)
@@ -16,6 +18,7 @@ export const AuthForm = () => {
       <LoginForm />
       <SignUpForm />
       <article className={contentClasses}>
+        <Link className='auth-form__return' to='/'><ArrowLeftIcon /></Link>
         <div>
           <h1 className='auth-form__title'>{isLogin ? 'Log in' : 'Sign Up'}</h1>
           <h2 className='auth-form__subtitle'>{isLogin ? 'Log in to view your tasks' : 'Register to start planning'}</h2>
