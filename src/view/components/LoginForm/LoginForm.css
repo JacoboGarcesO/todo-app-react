@@ -8,3 +8,11 @@
   border: 1px solid #FFF;
   border-right: none;
 }
+
+@media (width <= 720px) {
+  .login-form {
+    border: 1px solid #FFF;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+  }
+}

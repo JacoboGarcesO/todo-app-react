@@ -5,7 +5,7 @@ import './AuthForm.css'
 
 export const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true)
-  const contentClasses = isLogin ? 'auth-form__content auth-form__content--is-login' : 'auth-form__content'
+  const contentClasses = isLogin ? 'auth-form__content' : 'auth-form__content auth-form__content--is-login'
 
   const toggleAuth = () => {
     setIsLogin(prevState => !prevState)

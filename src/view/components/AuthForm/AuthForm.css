@@ -15,7 +15,7 @@
   right: 0;
   padding: 48px;
   display: flex;
-  height: 70vh;
+  height: 80vh;
   justify-content: center;
   border-radius: 10px;
   flex-direction: column;
@@ -58,4 +58,28 @@
 
 .auth-form__button:hover {
   color: #bebebe;
+}
+
+@media (width <=720px) {
+  .auth-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 200px;
+    margin-block: 48px;
+    width: 80%;
+  }
+
+  .auth-form__content {
+    width: calc(100% + 40px);
+    right: -20px;
+    top: 325px;
+    padding: 24px;
+    height: 450px;
+    transition: top 0.3s ease-in, height 0.3s ease-in;
+  }
+
+  .auth-form__content--is-login {
+    right: -20px;
+    top: -35px;
+    height: 350px;
+  }
 }
