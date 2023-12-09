@@ -1,5 +1,5 @@
-import { userCases, userInitialState } from './user/reducer'
 import { todoCases, todoInitialState } from './todo/reducer'
+import { userCases, userInitialState } from './user/reducer'
 
 export const initialState = { ...todoInitialState, ...userInitialState }
 

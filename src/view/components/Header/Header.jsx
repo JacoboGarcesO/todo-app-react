@@ -1,9 +1,9 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BrandIcon } from '../Icons/BrandIcon'
 import { HamburguerIcon } from '../Icons/HamburguerIcon'
 import { TimesIcon } from '../Icons/TimesIcon'
 import './Header.css'
-import { useState } from 'react'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)

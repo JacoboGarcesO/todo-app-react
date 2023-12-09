@@ -1,9 +1,9 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { ArrowLeftIcon } from '../Icons/ArrowLeftIcon'
 import { LoginForm } from '../LoginForm/LoginForm'
 import { SignUpForm } from '../SignUpForm/SignUpForm'
 import './AuthForm.css'
-import { ArrowLeftIcon } from '../Icons/ArrowLeftIcon'
-import { Link } from 'react-router-dom'
 
 export const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true)

@@ -1,6 +1,6 @@
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useState } from '../../hooks/state'
-import { useEffect } from 'react'
 
 export const AuthProtectedRouter = ({ children }) => {
   const navigate = useNavigate()

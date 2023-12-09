@@ -1,6 +1,6 @@
-import './HomeContent.css'
 import { Link } from 'react-router-dom'
 import { Container } from '../Container/Container'
+import './HomeContent.css'
 
 export const HomeContent = () => {
   const containerStyles = {
