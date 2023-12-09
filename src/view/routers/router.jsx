@@ -29,14 +29,8 @@ export const router = createHashRouter([
     path: '/dashboard',
     element: (
       <PrivateProtectedRouter>
-        <Layout />
+        <Dashboard />
       </PrivateProtectedRouter>
-    ),
-    children: [
-      {
-        path: '',
-        Component: Dashboard
-      }
-    ]
+    )
   }
 ])

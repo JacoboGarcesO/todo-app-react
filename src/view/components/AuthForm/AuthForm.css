@@ -4,7 +4,7 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   position: relative;
 }
@@ -20,7 +20,7 @@
   right: 0;
   padding: 48px;
   display: flex;
-  height: 80vh;
+  height: 65vh;
   justify-content: center;
   border-radius: 10px;
   flex-direction: column;
@@ -76,7 +76,7 @@
   .auth-form__content {
     width: calc(100% + 40px);
     right: -20px;
-    top: 325px;
+    top: 355px;
     padding: 24px;
     height: 450px;
     transition: top 0.3s ease-in, height 0.3s ease-in, gap 0.3s ease-in;
@@ -84,7 +84,7 @@
 
   .auth-form__content--is-login {
     right: -20px;
-    top: -35px;
+    top: -80px;
     height: 375px;
     gap: 20px;
 
