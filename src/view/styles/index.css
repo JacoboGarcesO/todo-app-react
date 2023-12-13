@@ -2,12 +2,13 @@
 
 :root {
   color-scheme: dark;
-  background-color: #242424;
+  background-color: var(--main-color);
 
   --main-color: #000;
+  --bg-gray-color: #0f0f0f;
   --alt-color: #017e80;
   --danger-color: #800101;
-  --danger-alt-color: #823e3e44;
+  --danger-alt-color: #ce9d9d44;
 }
 
 * {

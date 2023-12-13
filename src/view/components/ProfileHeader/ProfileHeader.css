@@ -1,0 +1,52 @@
+.profile-header {
+  background-color: var(--bg-gray-color);
+  border-radius: 30px;
+  padding: 8px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-header__photo img {
+  height: 80px;
+  width: 80px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-header__photo {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  align-items: center;
+}
+
+.profile-header__phrase {
+  font-weight: lighter;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.profile-header__user {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.profile-header__socials {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.profile-header__socials li {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: var(--bg-gray-color);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
+}

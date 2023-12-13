@@ -1,5 +1,18 @@
+import { ProfileHeader } from '../components/ProfileHeader/ProfileHeader'
+import { Container } from '../components/Container/Container'
+
 export const Dashboard = () => {
+  const containerStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    gap: '24px',
+    marginBlock: '24px'
+  }
+
   return (
-    <h1>Hola Dashboard</h1>
+    <Container styles={containerStyles}>
+      <ProfileHeader />
+    </Container>
   )
 }
