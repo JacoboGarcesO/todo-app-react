@@ -1,7 +1,14 @@
 import { todoActions } from './actions'
 
 export const todoInitialState = {
-  todos: []
+  todos: [
+    {
+      isCompleted: true
+    },
+    {
+      isCompleted: false
+    }
+  ]
 }
 
 export const todoCases = {

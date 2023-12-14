@@ -1,0 +1,36 @@
+.todos-progress {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+
+.todos-progress span {
+  position: relative;
+  z-index: 3;
+}
+
+.todos-progress::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #0f0f0f;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.todos-progress__value {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}

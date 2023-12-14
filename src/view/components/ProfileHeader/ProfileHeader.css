@@ -42,11 +42,11 @@
 }
 
 .profile-header__socials li {
-  padding: 4px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: var(--bg-gray-color);
+  background-color: #1f1f1f;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
 }

@@ -1,11 +1,12 @@
-import './ProfileHeader.css'
-import { InstagramIcon } from '../Icons/InstagramIcon'
-import { XIcon } from '../Icons/XIcon'
-import { DribbbleIcon } from '../Icons/DribbbleIcon'
-import { ReactIcon } from '../Icons/ReactIcon'
-import userLogo from '../../../assets/user.webp'
 import { useContext } from 'react'
+import userLogo from '../../../assets/user.webp'
 import { AppContext } from '../../../state/AppContext'
+import { DribbbleIcon } from '../Icons/DribbbleIcon'
+import { InstagramIcon } from '../Icons/InstagramIcon'
+import { ReactIcon } from '../Icons/ReactIcon'
+import { XIcon } from '../Icons/XIcon'
+import './ProfileHeader.css'
+import { TodosProgress } from '../TodosProgress/TodosProgress'
 
 const PHRASES = [
   'Embrace the journey.',
@@ -31,6 +32,7 @@ export const ProfileHeader = () => {
           <h3 className='profile-header__phrase'>{getRandomPhrase()}</h3>
         </div>
       </figure>
+      <TodosProgress />
       <ul className='profile-header__socials'>
         <li><InstagramIcon size={28} /></li>
         <li><XIcon size={28} /></li>
