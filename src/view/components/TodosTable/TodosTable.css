@@ -2,6 +2,9 @@
   background-color: var(--bg-gray-color);
   border-radius: 30px;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .todos-table {
@@ -9,7 +12,7 @@
 }
 
 .todos-table thead {
-  background-color: var(--alt-color);
+  background-color: rgba(var(--alt-color));
 }
 
 .todos-table td, .todos-table th {
@@ -27,11 +30,14 @@
 
 .todos-table tbody tr {
   transition: background-color 0.3s ease-out;
-  background-color: var(--main-color);
 }
 
-.todos-table tbody tr:nth-of-type(odd):hover {
-  background-color: var(--alt-color);
+.todos-table tbody tr:nth-of-type(odd) {
+  background-color: rgba(var(--alt-color), 0.2);
+}
+
+.todos-table tbody tr:hover {
+  background-color: rgba(var(--alt-color), 0.2);
 }
 
 .todos-table__count {

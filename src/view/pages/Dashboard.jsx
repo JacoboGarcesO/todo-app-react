@@ -1,6 +1,7 @@
 import { ProfileHeader } from '../components/ProfileHeader/ProfileHeader'
 import { Container } from '../components/Container/Container'
 import { TodosTable } from '../components/TodosTable/TodosTable'
+import { TodoForm } from '../components/TodoForm/TodoForm'
 
 export const Dashboard = () => {
   const containerStyles = {
@@ -15,6 +16,7 @@ export const Dashboard = () => {
     <Container styles={containerStyles}>
       <ProfileHeader />
       <TodosTable />
+      <TodoForm />
     </Container>
   )
 }

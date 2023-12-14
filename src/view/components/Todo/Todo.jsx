@@ -1,3 +1,5 @@
+import { EditIcon } from '../Icons/EditIcon'
+import { TrashIcon } from '../Icons/TrashIcon'
 import './Todo.css'
 
 export const Todo = ({ todo }) => {
@@ -7,7 +9,12 @@ export const Todo = ({ todo }) => {
       <td>{todo.name}</td>
       <td>{todo.description}</td>
       <td>{todo.finishDate}</td>
-      <td>Eliminar | Editar</td>
+      <td>
+        <div className='todo__actions'>
+          <EditIcon size={24} />
+          <TrashIcon size={24} />
+        </div>
+      </td>
     </tr>
   )
 }

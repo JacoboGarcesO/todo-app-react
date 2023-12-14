@@ -1,0 +1,34 @@
+.todo-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 16px;
+}
+
+.todo-filters__form {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.todo-filters__input {
+  padding: 8px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(var(--alt-color));
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.todo-filters__input label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.todo-filters__input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: lighter;
+}

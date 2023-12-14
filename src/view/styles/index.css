@@ -6,7 +6,7 @@
 
   --main-color: #000;
   --bg-gray-color: #0f0f0f;
-  --alt-color: #7d2ae8;
+  --alt-color: 125, 42, 232;
   --danger-color: #800101;
   --danger-alt-color: #ce9d9d44;
 }

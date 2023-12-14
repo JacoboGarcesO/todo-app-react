@@ -16,7 +16,7 @@
 .input input:focus,
 .input input:valid{
   outline: 0;
-  border-bottom-color: var(--alt-color);
+  border-bottom-color: rgba(var(--alt-color));
 }
 
 .input label {
@@ -37,6 +37,6 @@
 
 .input input:focus+label span,
 .input input:valid+label span {
-  color: var(--alt-color);
+  color: rgba(var(--alt-color));
   transform: translateY(-30px);
 }

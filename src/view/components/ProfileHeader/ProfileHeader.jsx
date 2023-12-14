@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import userLogo from '../../../assets/user.webp'
 import { AppContext } from '../../../state/AppContext'
 import { DribbbleIcon } from '../Icons/DribbbleIcon'
@@ -17,11 +17,12 @@ const PHRASES = [
 ]
 
 export const ProfileHeader = () => {
-  const { state: { currentUser } } = useContext(AppContext)
-
   const getRandomPhrase = () => {
     return PHRASES[Math.floor(Math.random() * PHRASES.length)]
   }
+
+  const [phrase] = useState(getRandomPhrase())
+  const { state: { currentUser } } = useContext(AppContext)
 
   return (
     <header className='profile-header'>
@@ -29,7 +30,7 @@ export const ProfileHeader = () => {
         <img src={userLogo} alt='Generic user Logo for All users' />
         <div>
           <h2 className='profile-header__user'>{currentUser.firstName} {currentUser.lastName}</h2>
-          <h3 className='profile-header__phrase'>{getRandomPhrase()}</h3>
+          <h3 className='profile-header__phrase'>{phrase}</h3>
         </div>
       </figure>
       <TodosProgress />

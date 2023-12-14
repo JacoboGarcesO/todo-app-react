@@ -16,9 +16,11 @@ export const todoInitialState = {
       finishDate: '2002-01-29',
       isCompleted: false
     }
-  ]
+  ],
+  isVisibleForm: false
 }
 
 export const todoCases = {
-  [todoActions.LOAD_TODOS_SUCCESS]: (state, payload) => ({ ...state, todos: payload })
+  [todoActions.LOAD_TODOS_SUCCESS]: (state, payload) => ({ ...state, todos: payload }),
+  [todoActions.TOGGLE_FORM]: (state) => ({ ...state, isVisibleForm: !state.isVisibleForm })
 }

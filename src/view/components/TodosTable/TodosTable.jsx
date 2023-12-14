@@ -2,12 +2,14 @@ import { useContext } from 'react'
 import { AppContext } from '../../../state/AppContext'
 import './TodosTable.css'
 import { Todo } from '../Todo/Todo'
+import { TodoFilters } from '../TodoFilters/TodoFilters'
 
 export const TodosTable = () => {
   const { state: { todos } } = useContext(AppContext)
 
   return (
     <section className='todos-container'>
+      <TodoFilters />
       <table className='todos-table'>
         <thead>
           <tr>
