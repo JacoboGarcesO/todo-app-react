@@ -1,0 +1,43 @@
+.todos-container {
+  background-color: var(--bg-gray-color);
+  border-radius: 30px;
+  padding: 16px;
+}
+
+.todos-table {
+  width: 100%;
+}
+
+.todos-table thead {
+  background-color: var(--alt-color);
+}
+
+.todos-table td, .todos-table th {
+  padding: 12px;
+  text-align: center;
+}
+
+.todos-table th:first-of-type {
+  border-top-left-radius: 30px;
+}
+
+.todos-table th:last-of-type {
+  border-top-right-radius: 30px;
+}
+
+.todos-table tbody tr {
+  transition: background-color 0.3s ease-out;
+  background-color: var(--main-color);
+}
+
+.todos-table tbody tr:nth-of-type(odd):hover {
+  background-color: var(--alt-color);
+}
+
+.todos-table__count {
+  font-weight: lighter;
+  padding: 16px;
+  display: block;
+  text-align: end;
+  font-size: 14px;
+}
