@@ -9,6 +9,19 @@
   cursor: pointer;
 }
 
+.button--cancel {
+  background-color: transparent;
+}
+
+.button--cancel::after, .button--active::after {
+  background-color: transparent !important;
+  transition: none !important;
+}
+
+.button--active {
+  background-color: rgba(var(--alt-color));
+}
+
 .button::after {
   content: '';
   position: absolute;

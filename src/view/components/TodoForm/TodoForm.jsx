@@ -21,7 +21,6 @@ export const TodoForm = () => {
 
     body = {
       ...body,
-      _id: state.todoToUpdate?._id ?? null,
       isCompleted: event.target.elements.isCompleted.checked,
       userId: state.currentUser._id
     }
@@ -42,7 +41,12 @@ export const TodoForm = () => {
   }
 
   const updateTodo = ({ body, target }) => {
-    update({ body })
+    update({
+      body: {
+        ...body,
+        _id: state.todoToUpdate._id
+      }
+    })
       .then((todo) => {
         dispatch(updateSuccess({ todo }))
         dispatch(toggleForm())
