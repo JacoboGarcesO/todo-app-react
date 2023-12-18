@@ -1,9 +1,9 @@
 import { useContext } from 'react'
+import { AppContext } from '../../../state/AppContext'
 import { setTodoToUpdate, toggleForm } from '../../../state/todo/actions'
 import { EditIcon } from '../Icons/EditIcon'
 import { TrashIcon } from '../Icons/TrashIcon'
 import './Todo.css'
-import { AppContext } from '../../../state/AppContext'
 
 export const Todo = ({ todo }) => {
   const { dispatch } = useContext(AppContext)

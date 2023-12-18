@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from 'react'
+import { get } from '../../../services/todo.service'
 import { AppContext } from '../../../state/AppContext'
 import { getSuccess, todoActions } from '../../../state/todo/actions'
 import { Button } from '../Button/Button'
 import './TodoFilters.css'
-import { get } from '../../../services/todo.service'
 
 export const TodoFilters = () => {
   const { dispatch, state } = useContext(AppContext)

@@ -1,10 +1,10 @@
-import './TodoForm.css'
-import { ArrowForward } from '../Icons/ArrowForward'
-import { Button } from '../Button/Button'
 import { useContext, useState } from 'react'
+import { create, update } from '../../../services/todo.service'
 import { AppContext } from '../../../state/AppContext'
 import { createSuccess, setTodoToUpdate, toggleForm, updateSuccess } from '../../../state/todo/actions'
-import { create, update } from '../../../services/todo.service'
+import { Button } from '../Button/Button'
+import { ArrowForward } from '../Icons/ArrowForward'
+import './TodoForm.css'
 
 export const TodoForm = () => {
   const { dispatch, state } = useContext(AppContext)

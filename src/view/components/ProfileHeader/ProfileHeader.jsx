@@ -5,8 +5,8 @@ import { DribbbleIcon } from '../Icons/DribbbleIcon'
 import { InstagramIcon } from '../Icons/InstagramIcon'
 import { ReactIcon } from '../Icons/ReactIcon'
 import { XIcon } from '../Icons/XIcon'
-import './ProfileHeader.css'
 import { TodosProgress } from '../TodosProgress/TodosProgress'
+import './ProfileHeader.css'
 
 const PHRASES = [
   'Embrace the journey.',
