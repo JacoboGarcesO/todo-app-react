@@ -1,26 +1,23 @@
 import { todoActions } from './actions'
 
 export const todoInitialState = {
-  todos: [
-    {
-      _id: 'jajajasssss',
-      name: 'Review content',
-      description: 'Review content in Q10 to improve',
-      finishDate: '2002-01-29',
-      isCompleted: true
-    },
-    {
-      _id: 'dffddfdf',
-      name: 'Review content GIT',
-      description: 'Review content in Q10 to improve GIT',
-      finishDate: '2002-01-29',
-      isCompleted: false
-    }
-  ],
+  todos: [],
+  todoToUpdate: null,
   isVisibleForm: false
 }
 
 export const todoCases = {
-  [todoActions.LOAD_TODOS_SUCCESS]: (state, payload) => ({ ...state, todos: payload }),
-  [todoActions.TOGGLE_FORM]: (state) => ({ ...state, isVisibleForm: !state.isVisibleForm })
+  [todoActions.TOGGLE_FORM]: (state) => ({ ...state, isVisibleForm: !state.isVisibleForm }),
+  [todoActions.GET_TODOS_SUCCESS]: (state, payload) => ({ ...state, todos: payload }),
+  [todoActions.SET_TODO_TO_UPDATE]: (state, payload) => ({ ...state, todoToUpdate: payload }),
+  [todoActions.CREATE_TODO_SUCCESS]: (state, payload) => ({ ...state, todos: [...state.todos, payload] }),
+  [todoActions.UPDATE_TODO_SUCCESS]: (state, payload) => {
+    const index = state.todos.findIndex((todo) => todo._id === payload._id)
+    state.todos[index] = payload
+    return { ...state, todoToUpdate: null }
+  },
+  [todoActions.DELETE_TODO_SUCCESS]: (state, payload) => {
+    const todos = state.todos.filter((todo) => todo._id !== payload)
+    return { ...state, todos }
+  }
 }
