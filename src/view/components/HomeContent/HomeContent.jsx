@@ -16,7 +16,7 @@ export const HomeContent = () => {
     <section className='home-content'>
       <Container styles={containerStyles}>
         <h1 className='home-content__title'>Welcome to <span>Todos.zip</span>, your favorite place to manage tasks.</h1>
-        <Link className='home-content__button' to='/auth'><span>Get Started</span></Link>
+        <Link className='home-content__button' to='/dashboard'><span>Get Started</span></Link>
       </Container>
     </section>
   )
