@@ -1,10 +1,6 @@
 import { useContext, useState } from 'react'
 import userLogo from '../../../assets/user.webp'
 import { AppContext } from '../../../state/AppContext'
-import { DribbbleIcon } from '../Icons/DribbbleIcon'
-import { InstagramIcon } from '../Icons/InstagramIcon'
-import { ReactIcon } from '../Icons/ReactIcon'
-import { XIcon } from '../Icons/XIcon'
 import { TodosProgress } from '../TodosProgress/TodosProgress'
 import './ProfileHeader.css'
 
@@ -34,12 +30,6 @@ export const ProfileHeader = () => {
         </div>
       </figure>
       <TodosProgress />
-      <ul className='profile-header__socials'>
-        <li><InstagramIcon size={28} /></li>
-        <li><XIcon size={28} /></li>
-        <li><DribbbleIcon size={28} /></li>
-        <li><ReactIcon size={28} /></li>
-      </ul>
     </header>
   )
 }

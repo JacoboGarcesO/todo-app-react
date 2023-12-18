@@ -32,5 +32,13 @@ export const router = createHashRouter([
         <Dashboard />
       </PrivateProtectedRouter>
     )
+  },
+  {
+    path: '/profile',
+    element: (
+      <PrivateProtectedRouter>
+        Holi
+      </PrivateProtectedRouter>
+    )
   }
 ])
