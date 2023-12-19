@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-inline: 16px;
+  gap: 16px;
 }
 
 .todo-filters__form {
@@ -31,4 +33,14 @@
   background: transparent;
   font-size: 13px;
   font-weight: lighter;
+}
+
+@media (width <= 720px) {
+  .todo-filters {
+    padding-inline: 0;
+    
+    * {
+      width: 100%;
+    }
+  }
 }

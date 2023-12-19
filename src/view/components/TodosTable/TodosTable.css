@@ -47,3 +47,18 @@
   text-align: end;
   font-size: 14px;
 }
+
+.todos-table__wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #6969dd #e0e0e0;
+}
+
+@media (width <= 720px) {
+  .todos-table__wrapper {
+    overflow-x: scroll;
+  }
+  
+  .todos-table__wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--alt-color), 0.3);
+  }
+}

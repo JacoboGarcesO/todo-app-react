@@ -79,7 +79,7 @@ export const TodoForm = () => {
       <fieldset className='todo-form__section'>
         <div className='todo-form__input'>
           <label htmlFor='description'>Description</label>
-          <textarea defaultValue={state.todoToUpdate?.description ?? ''} minLength={3} name='description' id='description' cols='30' rows='10' />
+          <textarea defaultValue={state.todoToUpdate?.description ?? ''} minLength={3} name='description' id='description' rows='10' />
         </div>
 
         <div className='todo-form__checkbox'>

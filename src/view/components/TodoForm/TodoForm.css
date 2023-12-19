@@ -64,3 +64,13 @@
   gap: 5px;
   align-items: center;
 }
+
+@media (width <= 720px) {
+  .todo-form {
+    width: 90%;
+  }
+
+  .todo-form__section--grid {
+    grid-template-columns: 1fr;
+  }
+}

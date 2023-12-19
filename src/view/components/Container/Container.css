@@ -2,3 +2,9 @@
   max-width: 1110px;
   margin: 0 auto;
 }
+
+@media (width <= 720px) {
+  .container {
+    padding-inline: 5px;
+  }
+}

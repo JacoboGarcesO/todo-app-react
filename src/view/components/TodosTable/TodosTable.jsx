@@ -10,20 +10,22 @@ export const TodosTable = () => {
   return (
     <section className='todos-container'>
       <TodoFilters />
-      <table className='todos-table'>
-        <thead>
-          <tr>
-            <th />
-            <th>Name</th>
-            <th>Description</th>
-            <th>Due</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {todos.map((todo) => <Todo key={todo._id} todo={todo} />)}
-        </tbody>
-      </table>
+      <section className='todos-table__wrapper'>
+        <table className='todos-table'>
+          <thead>
+            <tr>
+              <th />
+              <th>Name</th>
+              <th>Description</th>
+              <th>Due</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {todos.map((todo) => <Todo key={todo._id} todo={todo} />)}
+          </tbody>
+        </table>
+      </section>
       <span className='todos-table__count'> Count: {todos.length}</span>
     </section>
   )
