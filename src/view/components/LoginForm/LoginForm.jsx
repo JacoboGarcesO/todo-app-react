@@ -14,6 +14,7 @@ export const LoginForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    setError(null)
     const body = [...event.target.elements]
       .reduce((body, element) => {
         return element.name ? { ...body, [element.name]: element.value } : body
