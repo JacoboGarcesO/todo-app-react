@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-color: #0009;
   background-blend-mode: soft-light;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .home-content__title {

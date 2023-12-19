@@ -9,7 +9,7 @@ export const HomeContent = () => {
     justifyContent: 'center',
     alignItems: 'center',
     gap: '100px',
-    minHeight: 'calc(100vh - 80px)'
+    minHeight: 'calc(100dvh - 80px)'
   }
 
   return (
