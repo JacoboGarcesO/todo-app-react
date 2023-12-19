@@ -17,8 +17,6 @@
 
 Todos.zip is a app for the managment of the daily, weekly and monthly tasks in your life. [Check a demo](https://jacobogarceso.github.io/todo-app-react/)
 
-<p align="right"><a href="#top">Back to top 🔼</a></p>
-
 ## Getting Started
 
 Install the dependencies:
