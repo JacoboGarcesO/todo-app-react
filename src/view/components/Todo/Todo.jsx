@@ -49,6 +49,7 @@ export const Todo = ({ todo }) => {
             callback={() => {
               dispatch(toggleDialog())
               dispatch(setTodoToDelete({ todo }))
+              window.scrollTo(0, 0)
             }}
           />
         </div>

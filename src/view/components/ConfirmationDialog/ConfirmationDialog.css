@@ -54,3 +54,29 @@
     transform: translateY(0);
   }
 }
+
+@media (width <= 720px) {
+  .confirmation-dialog__header {
+    padding: 20px 10px;
+    h1 { font-size: 30px; }
+  }
+  
+  .confirmation-dialog__message {
+    padding: 20px 10px;
+    h3 { font-size: 16px; }
+  }
+
+  .confirmation-dialog__footer {
+    border-top: 1px solid #3b3b3b;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .confirmation-dialog {
+    width: 100%;
+    padding: 10px;
+  }
+}
